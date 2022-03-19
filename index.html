@@ -35,7 +35,6 @@
 				  <a class="nav-link" href="lakeland.html">Lakeland</a>
 				  <a class="nav-link" href="miami.html">Miami</a>
 				  <a class="nav-link" href="orlando.html">Orlando</a>
-				  <a class="nav-link" href="omaha.html">Omaha</a>
 				</div>
 			  </div>
 			</div>
@@ -46,60 +45,58 @@
 	        <div class="row g-4 justify-content-center align-items-center">
 	          <div class="col-5 text-center text-md-start">
 	            <h1>
-	              <div class="display-2" style="font-family: 'Bangers', cursive;">Weather Weeb</div>
+	              <div class="display-2" style="font-family: 'Bangers', cursive;">Weather APP</div>
 	        
 	            </h1>
-	            <p class="lead my-4 text-muted">Here at Weather Weeb we bring you all the greatest in weebtastic, anime-powered weather. All our forecasts have power levels over 9000!</p>
+	            <p class="lead my-4 text-muted">Click on the forcast link to view the 7 day forcast for the week. All data is being loaded from the OpenWeatherAPI!</p>
 	          </div>
 	          <div class="col-5 text-center">
 	          <!-- tooltip -->
-	          <span class="tt" data-bs-placement="bottom" title="Dr. Roberson">
+
+	         <div>
 	            <img src="images/weathergirl.png" class="img-fluid" alt="weathergirl">
-	          </span>
+			</div>
 	        </div>
 	        </div>
 	      </div>
 	    </section>
 	    <section id="weather">
-	    	<div class="container-lg m-5">
-	    		<div class="row my-5 g-0 align-items-center justify-content-evenly">
-			    	<div class="card col-2" style="border-radius: 20px;">
-					  <div class="card-body">
+	    	<div class="container-fluid">
+	    		<div class="row align-items-center justify-content-evenly">
+			    	<div class="col-md-4" style="border-radius: 25px;">
+					  <div class = "card border-0 align-items-center justify-content-center "style="border-radius:20px;  margin-top:25px;" >
 					    <h5 id="city0" class="card-title"></h5>
 					    <h6 id="currentWeather0"  class="card-subtitle mb-2 text-muted"></h6>
 					    <p class="card-text text-center display-1"><i id="icon0" class="bi"></i></p>
 					    <a href="#" id="btnModal0" class="card-link" data-bs-toggle="modal" data-bs-target="#weather-modal" onclick="sevenDayForecast(this.dataset.city)">Forecast</a>
 					  </div>
 					</div>
-					<div class="card col-2" style="border-radius: 20px;">
-					  <div class="card-body">
+					<div class="col-md-4" style="border-radius: 20px;">
+					  <div class = "card border-0 align-items-center justify-content-center "style="border-radius:20px; margin-top:25px; " >
 					    <h5 id="city1" class="card-title"></h5>
 					    <h6 id="currentWeather1" class="card-subtitle mb-2 text-muted"></h6>
 					    <p class="card-text text-center display-1"><i id="icon1" class="bi"></i></p>
 					    <a href="#" id="btnModal1" class="card-link" data-bs-toggle="modal" data-bs-target="#weather-modal" onclick="sevenDayForecast(this.dataset.city)">Forecast</a>
 					  </div>
 					</div>
-					<div class="card col-2" style="border-radius: 20px;">
-					  <div class="card-body">
+					<div class="col-md-4" style="border-radius: 20px;  margin-bottom:20px;">
+					  <div class = "card border-0 align-items-center justify-content-center "style="border-radius:20px; margin-top:25px;">
 					    <h5 id="city2" class="card-title"></h5>
 					    <h6 id="currentWeather2" class="card-subtitle mb-2 text-muted"></h6>
 					    <p class="card-text text-center display-1"><i id="icon2" class="bi"></i></p>
 					    <a href="#" id="btnModal2" class="card-link" data-bs-toggle="modal" data-bs-target="#weather-modal" onclick="sevenDayForecast(this.dataset.city)">Forecast</a>
 					  </div>
 					</div>
-					<div  class="card col-2" style="border-radius: 20px;">
-					  <div class="card-body">
-					    <h5 id="city3" class="card-title"></h5>
-					    <h6 id="currentWeather3" class="card-subtitle mb-2 text-muted"></h6>
-					    <p class="card-text text-center display-1"><i id="icon3" class="bi"></i></p>
-					    <a href="#" id="btnModal3" class="card-link" data-bs-toggle="modal" data-bs-target="#weather-modal" onclick="sevenDayForecast(this.dataset.city)">Forecast</a>
-					  </div>
+
 					</div>
 				</div>
 			</div>
 	    </section>
+		<div style="margin-bottom: 100px;">
+
+		</div>
 	    <section id="footer">
-			<nav class="navbar navbar-light bg-light fixed-bottom">
+			<nav style="margin-top: 20px;" class="navbar navbar-light bg-light fixed-bottom">
 			  <div class="container-fluid d-flex justify-content-center">
 			    <span class="navbar-text">
 			      &copy; 2021 Robersonian Industries
@@ -154,6 +151,15 @@
 	    </script>
 		  
 	    <script type="text/javascript" src="weather.js"></script>
+
+		<style>
+
+			@media screen and (min-width: 768px) {  
+    			.custom-collapse .collapse {
+            display:block;
+    		}  
+		}
+		</style>
 
 
 	</body>
